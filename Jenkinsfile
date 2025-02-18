@@ -28,7 +28,7 @@ pipeline {
                 branch 'main'
             }
             steps {
-                sh 'docker push -t $DOCKER_IMAGE:$BUILD_NUMBER .'
+                sh 'docker push $DOCKER_IMAGE:$BUILD_NUMBER .'
             }
         }
     }
